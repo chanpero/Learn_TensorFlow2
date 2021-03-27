@@ -1,11 +1,13 @@
 import tensorflow as tf
+from matplotlib import pyplot as plt
 
 fashion = tf.keras.datasets.fashion_mnist
 (x_train, y_train), (x_test, y_test) = fashion.load_data()
 
-# plt.imshow(x_train[67])
-# plt.show()
-# print('The pic is ', y_train[67])
+# for i in range(100):
+#     plt.imshow(x_train[i])
+#     plt.show()
+#     print('The pic is ', y_train[i])
 
 # print('x_train[1]: \n', x_train[0])
 # print('y_train[1]: \n', y_train[0])
